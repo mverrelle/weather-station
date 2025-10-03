@@ -1,14 +1,13 @@
 #include "measurement.h"
 #include <time.h>
 
-
 /**
  * @brief   Get current time since start in ms
  * @return  current time since start in ms
  */
 static uint64_t get_timestamp_ms(void) {
     struct timespec ts;
-    clock_gettime(&ts, TIME_UTC);
+    timespec_get(&ts, TIME_UTC);
     return (uint64_t)(ts.tv_sec * 1000ULL + ts.tv_nsec / 1000000ULL);
 }
 
