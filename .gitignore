@@ -1,0 +1,8 @@
+# VSCode config
+.vscode/
+
+# Build files
+build/
+
+# Binary files
+bin/
