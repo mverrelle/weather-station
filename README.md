@@ -10,4 +10,4 @@ Features:
 ## Build & Run
 ```bash
 make
-./weather-station-sim
+./weather-station
